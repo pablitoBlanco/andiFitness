@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <title>Inscripcion</title>
+</head>
+<body>
+  <header>
+    <div class="menu">
+      <div class="holder">
+        <a href="index.html" id="tituloLink"> <p>AndiFitness</p></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">inicio</a></li>
+            <li>clases
+            <li><a href="">contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="formularioInscripcion">
+      <h2>Datos</h2>
+      <form onsubmit="enviarDatos(event)">
+        <label for="inputNombre">Nombre</label>
+        <input type="text" id="inputNombre" >
+        <label for="inputNumero">Telefono</label>
+        <input type="text" pattern="\d*" required  id="inputNumero">
+        <label for="inputEmail">E-mail</label>
+        <input type="email" pattern=".+@hotmail\.com" size="30" required id="inputEmail">
+        <button id="botonEnviarDatos"">Enviar</button>
+      </form>
+      <button id="botonCancelar" onclick = "cancelar()">Cancelar</button>
+    </div>
+ </header>
+
+
+  <script  src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script defer src="app.js"></script>
+  <script defer src="app2.js"></script>
+
+</body>
+</html>

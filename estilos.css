@@ -1,0 +1,455 @@
+body{
+
+  margin:0px;
+  padding:0px;
+  font-family: 'Montserrat';
+  width: 100vw
+
+}
+
+.holder{
+
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1280px;
+  height:100%;
+  margin: 0 auto;
+
+}
+
+li{
+
+  list-style: none;
+  font-style: italic;
+  font-size: 18px;
+}
+
+header{
+
+  background: url('img/22.jpg');
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  box-shadow: 0px 2px 8px 2px rgba( 0, 0, 0, 0.2);
+
+}
+
+.menu{
+
+  position: sticky;
+  top:0px;
+  height: 80px;
+  background-color: #000;
+  box-shadow: 0px 2px 8px 2px rgba( 0, 0, 0, 0.2);
+  opacity:1;
+
+}
+
+header ul{
+
+  display:flex;
+  color: yellow;
+
+}
+
+header li{
+
+  margin: 0px 20px;
+  text-decoration: none;
+  color: yellow;
+  text-transform: capitalize;
+
+}
+
+
+.titulo{
+
+  text-align: center;
+  font-style: italic;
+  margin-top: 40vh;
+
+}
+
+h1{
+
+  font-size: 60px;
+  opacity: 1;
+
+}
+
+.titulo a{
+
+  background-color: black;
+  padding: 15px 25px;
+  font-size:17px;
+  border-radius: 10%;
+  opacity: 1;
+  color: yellow;
+  text-decoration: none;
+
+}
+
+.titulo a:hover{
+  transform: scale(1.1);
+}
+
+header p {
+
+  font-size: 35px;
+  font-style: italic;
+  color: yellow;
+  text-transform: capitalize;
+
+}
+
+
+.menu li:hover{
+
+  transform: scale(1.1);
+  animation-name: colorcitos;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+
+}
+
+.menu a:hover{
+
+  transform: scale(1.1);
+  animation-name: colorcitos;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  cursor: pointer;
+
+}
+
+.menu li a{
+
+  color: yellow;
+  text-decoration:none;
+
+}
+
+
+.menu p:hover {
+
+  transform: scale(1.1);
+  cursor: pointer;
+
+}
+
+
+
+
+
+/*-----------------------cursos------------------------------*/
+
+#cursos{
+
+  display:none;
+
+}
+
+#cursos .holder{
+
+  margin-top:150px;
+  justify-content: space-between;
+
+}
+
+#cursos h2{
+
+  margin-top:150px;
+  text-align:center;
+  font-size: 55px;
+  font-style: italic;
+  text-shadow: grey 2px 2px 2px ;
+
+}
+
+.curso{
+
+  width:300px;
+  height: 550px;
+  box-shadow:  10px 10px 10px rgba( 0, 0, 0, 0.2 );
+ /*  background-image: url("img/24.jpeg");
+  background-size: cover;
+  background-position: center; */
+  color: black ;
+  font-size:25px;
+  font-style: italic;
+
+}
+
+
+.hoverCursos{
+
+  width:100%;
+  height:100%;
+  background-color: #000;
+  opacity: 0.6;
+  display:none
+
+}
+
+.hoverCursosVisible{
+
+  display:block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.hoverCursos p {
+
+  color: white
+
+}
+
+.curso div:hover {
+
+  cursor:pointer
+
+}
+
+/*------------------FOOTER----------------*/
+
+#footer {
+
+  margin-top: 250px;
+  height: 300px;
+  background-color: black;
+  box-shadow:  0px -5px 8px 2px rgba( 0, 0, 0, 0.2 );
+  display:none;
+
+}
+
+#footer .holder{
+
+  justify-content: space-around;
+
+}
+
+i {
+
+  font-size:65px;
+  color: yellow
+
+}
+
+
+/* ----------------------------------------------------------------- */
+
+
+.modal {
+
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 20px;
+
+}
+
+.traslucido {
+
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0.9;
+  z-index: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+}
+
+
+.boton {
+
+  /* width: 200px; */
+  height: 50px;
+  background-color: #000;
+  color: yellow;
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+  align-self:center
+
+}
+
+.boton:disabled{
+  cursor: not-allowed !important;
+}
+
+
+.boton:hover{
+
+  cursor: pointer;
+
+}
+
+#boardId h3 {
+
+  font-size: 45px;
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: center;
+  text-shadow: grey 2px 2px 2px ;
+
+
+}
+
+#precioCurso{
+  align-self: center;
+}
+
+#precioEnCuotas{
+  align-self: center;
+}
+
+#cuotas{
+
+  align-self: center;
+  width: 50%;
+  margin-bottom: 15%;
+  height: 28px
+
+}
+
+label{
+
+  align-self: center;
+  margin-bottom: 10px;
+
+}
+
+#curso1{
+   background-image: url("img/24.jpeg");
+  background-size: cover;
+  background-position: center;
+
+}
+
+#curso2{
+   background-image: url("img/30.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#curso3{
+  background-image: url("img/26.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+form{
+  width:100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.formularioInscripcion{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 20px;
+}
+
+.formularioInscripcion h2{
+  text-align:center;
+  font-size: 45px;
+  font-style: italic;
+}
+
+.formularioInscripcion form input{
+  margin: 15px;
+}
+
+.misCursos{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.misCursos a {
+  text-decoration: none;
+  color: yellow
+}
+
+
+#modalInscripciones{
+
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 20px;
+
+/*   flex-wrap: wrap;
+ */}
+
+#modalInscripciones p{
+
+
+  color: black;
+  margin-left: 20px;
+
+}
+
+#modalInscripciones button{
+  width: 100px;
+  height: 40px;
+  margin-top: 35px
+}
+
+.divIns{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+#listaInscripcion{
+  flex-direction: column;
+  align-items: center;
+}
+
+#tituloLink{
+  text-decoration: none;
+}
